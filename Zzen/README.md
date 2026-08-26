@@ -1,11 +1,3 @@
-Zzen.lua
-
-A modern, customizable Roblox UI Library for Luau.
-
-Zzen.lua provides a collection of UI components including Tabs, Sections, Toggles, Sliders, Dropdowns, Inputs, Colorpickers, Keybinds, Checkboxes, Steppers, Accordions, Notifications, Dialogs and more.
-
----
-
 Features
 
 - Modern Roblox UI
@@ -44,11 +36,10 @@ Features
 
 Load
 
-Load Zzen.lua directly from GitHub:
-
-local Zzen = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/Zzen.lua"
+```lua
+local Zzen = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/Zzen.lua"
 ))()
+```
 
 ---
 
