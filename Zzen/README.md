@@ -1,170 +1,74 @@
-Features
-
-- Modern Roblox UI
-- Multiple built-in themes
-- Tabs and Sections
-- Toggle
-- Slider
-- Dropdown
-- Multi Dropdown
-- Input
-- Colorpicker
-- Keybind
-- Checkbox
-- Radio Group
-- Number Input
-- Action Button
-- Button Group
-- Quick Actions
-- Divider
-- Separator
-- Status Indicator
-- Counter Button
-- Stepper
-- Toggle Group
-- Accordion
-- Chip
-- Live Label
-- Notifications
-- Dialogs
-- Presets
-- Theme management
-- Accent color management
-- Save/Load configuration support
-
----
-
 Load
 
 ```lua
 local Zzen = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/Zzen.lua"
 ))()
 ```
-
----
-
-Basic Structure
-
-The basic structure is:
-
-Zzen
- └── Window
-      ├── Tab
-      │    ├── Section
-      │    │    ├── Toggle
-      │    │    ├── Slider
-      │    │    ├── Dropdown
-      │    │    └── ...
-      │    │
-      │    └── Elements
-      │
-      └── Tab
-
-The normal flow is:
-
-Load Library
-      ↓
-Create Window
-      ↓
-Create Tab
-      ↓
-Create Section
-      ↓
-Create Element
-
----
-
 Create Window
 
+```lua
 local Window = Zzen:CreateWindow({
     Title = "My Script",
     SubTitle = "Zzen Example",
-
     Size = UDim2.fromOffset(600, 450),
-
     Theme = "Dark"
 })
+```
 
 Window Options
 
-Common options include:
-
+```lua
 local Window = Zzen:CreateWindow({
     Title = "My Script",
     SubTitle = "Example",
-
     Size = UDim2.fromOffset(600, 450),
-
     Theme = "Dark",
-
     Search = true,
-
     MinimizeKey = Enum.KeyCode.RightControl
 })
-
----
+```
 
 Create Tab
 
+```lua
 local Main = Window:AddTab({
     Title = "Main",
     Icon = "home"
 })
+```
 
 Create multiple tabs:
 
+```lua
 local Main = Window:AddTab({
     Title = "Main",
     Icon = "home"
 })
-
-local Player = Window:AddTab({
-    Title = "Player",
-    Icon = "user"
-})
-
-local Settings = Window:AddTab({
-    Title = "Settings",
-    Icon = "settings"
-})
-
----
+```
 
 Select Tab
 
+```lua
 Window:SelectTab(Main)
-
-Example:
-
-local Main = Window:AddTab({
-    Title = "Main",
-    Icon = "home"
-})
-
-local Settings = Window:AddTab({
-    Title = "Settings",
-    Icon = "settings"
-})
-
-Window:SelectTab(Settings)
-
----
+```
 
 Section
 
-Create a section inside a Tab:
-
+```lua
 local Section = Main:AddSection(
     "Main Features",
     "zap"
 )
+```
 
-Then add elements to the Section:
+add elements to the Section
 
+```lua
 Section:AddToggle("Enabled", {
     Title = "Enable",
     Default = false
 })
+```
 
 A Section is useful for grouping related options.
 
