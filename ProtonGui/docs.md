@@ -24,6 +24,7 @@ local Window = WindUI:CreateWindow({
 local Window = WindUI:CreateWindow({
     Title = "Araiwa",
     Author = "gamename",
+    Icon = "sparkles",
     Folder = "Araiwa",
     NewElements = true,
     Topbar = {
