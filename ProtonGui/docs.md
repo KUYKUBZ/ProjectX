@@ -18,7 +18,7 @@ local Window = WindUI:CreateWindow({
     BottomDragBarEnabled = true
 })
 ```
-# WINDOW WITH MAC BUTTON + SIZE
+# WINDOW WITH MACOS BUTTON + SIZE
 
 ```lua
 local Window = WindUI:CreateWindow({
