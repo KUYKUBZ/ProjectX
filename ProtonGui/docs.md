@@ -18,6 +18,26 @@ local Window = WindUI:CreateWindow({
     BottomDragBarEnabled = true
 })
 ```
+# WINDOW WITH MAC BUTTON + SIZE
+
+```lua
+local Window = WindUI:CreateWindow({
+    Title = "Araiwa",
+    Author = "gamename",
+    Folder = "Araiwa",
+    NewElements = true,
+    Topbar = {
+        Height = 44,
+        ButtonsType = "Mac",
+    },
+    Size = UDim2.fromOffset(500, 230),
+    MinSize = Vector2.new(500, 230),
+    MaxSize = Vector2.new(850, 560),
+    ModernLayout = false,
+    BottomDragBarEnabled = false
+})
+```
+
 ---
 ## Multi Section
 
