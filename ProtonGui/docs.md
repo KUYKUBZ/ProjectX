@@ -1,6 +1,6 @@
 # SET UP
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/toxicity-561/Proton-Hub/refs/heads/main/UI/ProtonUI/WindUI.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/ProtonGui/WindUI.luau"))()
 ```
 ---
 # CREATE WINDOW
