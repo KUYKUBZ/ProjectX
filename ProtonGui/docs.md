@@ -3,7 +3,7 @@ https://footagesus.github.io/WindUI-Docs/
 
 # SET UP
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/ProtonGui/WindUI.luau"))()
+local WindUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/ProtonGui/WindUI.luau"))()
 ```
 ---
 # CREATE WINDOW
