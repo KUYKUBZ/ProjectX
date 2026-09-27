@@ -3,6 +3,14 @@ https://footagesus.github.io/WindUI-Docs/
 
 # SET UP
 ```lua
+local Link = "https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/ProtonGui/WindUI.luau"
+local bytes = {}
+for i = 1, #Link do
+    table.insert(bytes, string.byte(Link, i))
+end
+print("{" .. table.concat(bytes, ", ") .. "}")
+```
+```lua
 local function decodeUrl(bytes)
     local str = ""
     for i = 1, #bytes do
@@ -10,7 +18,8 @@ local function decodeUrl(bytes)
     end
     return str
 end
-
+```
+```lua
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/ProtonGui/WindUI.luau"))()
 ```
 ---
