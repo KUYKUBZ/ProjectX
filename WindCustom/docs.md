@@ -63,6 +63,11 @@ local Window = WindUI:CreateWindow({
 ### Create
 
 ```lua
+local MainTab = Window:Tab({
+    Title = "Tab test",
+    Icon = "bird", -- optional
+    Locked = false,
+})
 local Multi = MainTab:MultiSection({
     Title = "Combat Modes",
     Desc = "Switch between profiles",
