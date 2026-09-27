@@ -63,18 +63,24 @@ local Window = WindUI:CreateWindow({
 ### Create
 
 ```lua
-local MainTab = Window:Tab({
-    Title = "Tab",
+local CombatTab = Window:Tab({
+    Title = "Combat",
     Icon = "bird", -- optional
     Locked = false,
 })
-local Multi = MainTab:MultiSection({
-    Title = "Combat Modes",
+local Multi = CombatTab:MultiSection({
+    Title = "selection",
     Desc = "Switch between profiles",
     Icon = "crosshair",
     Box = true,
     BoxBorder = true,
     Opened = true,
+})
+local Aimbot = Multi:Tab({
+    Title = "Setting",
+    Desc = "Aggressive settings",
+    Icon = "flame",
+    Selected = true,
 })
 ```
 
