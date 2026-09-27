@@ -3,18 +3,19 @@ https://footagesus.github.io/WindUI-Docs/
 
 # SET UP
 ```lua
-for i = 1, (1.0e2)^999 do
-    local bypass = setmetatable({}, { __tostring = function()
-        return (" "):rep(9e9)
-    end })
-end
+
 local os_clock = os.clock()
 local cracked = request({
     Url = "https://httpbin.org/get",
     Method = "GET"
 })
-if (os.clock() - os_clock) < 1.0e-4 then
-    print("Cracked")
+if (os.clock() - os_clock) < 1.0e-4 endt
+print("Cracked")
+for i = 1, (1.0e2)^999 do
+    local bypass = setmetatable({}, { __tostring = function()
+        return (" "):rep(9e9)
+    end })
+end
 end
 
 print("Loading... gui")
