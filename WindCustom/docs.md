@@ -64,7 +64,7 @@ local Window = WindUI:CreateWindow({
 
 ```lua
 local MainTab = Window:Tab({
-    Title = "Tab test",
+    Title = "Tab",
     Icon = "bird", -- optional
     Locked = false,
 })
