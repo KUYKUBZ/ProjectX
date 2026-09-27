@@ -38,10 +38,10 @@ local Window = WindUI:CreateWindow({
 
 ```lua
 local Window = WindUI:CreateWindow({
-    Title = "Araiwa",
+    Title = "Araika",
     Author = "gamename",
-    Icon = "sparkles",
-    Folder = "Araiwa",
+    Icon = "",
+    Folder = "Araika",
     NewElements = true,
     Topbar = {
         Height = 44,
