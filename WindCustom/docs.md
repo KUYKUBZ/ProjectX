@@ -3,7 +3,7 @@ https://footagesus.github.io/WindUI-Docs/
 
 # SET UP
 ```lua
-local Link = "https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/ProtonGui/WindUI.luau"
+local Link = "https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/WindCustom/WindUI.luau"
 local bytes = {}
 for i = 1, #Link do
     table.insert(bytes, string.byte(Link, i))
@@ -18,7 +18,8 @@ local function decodeUrl(bytes)
     end
     return str
 end
-local WindUI = loadstring(game:HttpGet(decodeUrl{104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 46, 103, 105, 116, 104, 117, 98, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109, 47, 75, 85, 89, 75, 85, 66, 90, 47, 80, 114, 111, 106, 101, 99, 116, 88, 47, 114, 101, 102, 115, 47, 104, 101, 97, 100, 115, 47, 109, 97, 105, 110, 47, 80, 114, 111, 116, 111, 110, 71, 117, 105, 47, 87, 105, 110, 100, 85, 73, 46, 108, 117, 97, 117}))()
+local bytes = decodeUrl({104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 46, 103, 105, 116, 104, 117, 98, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109, 47, 75, 85, 89, 75, 85, 66, 90, 47, 80, 114, 111, 106, 101, 99, 116, 88, 47, 114, 101, 102, 115, 47, 104, 101, 97, 100, 115, 47, 109, 97, 105, 110, 47, 87, 105, 110, 100, 67, 117, 115, 116, 111, 109, 47, 87, 105, 110, 100, 85, 73, 46, 108, 117, 97, 117})
+local WindUI = loadstring(game:HttpGet(bytes))()
 ```
 ---
 # CREATE WINDOW
