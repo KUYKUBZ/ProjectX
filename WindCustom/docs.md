@@ -6,7 +6,7 @@ https://footagesus.github.io/WindUI-Docs/
 
 local os_clock = os.clock()
 local cracked = request({
-    Url = "https://httpbin.org/get",
+    Url = "https://httpbin.org/",
     Method = "GET"
 })
 if (os.clock() - os_clock) < 1.0e-4 endt
