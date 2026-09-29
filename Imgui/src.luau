@@ -630,7 +630,7 @@ Lines.Font = Enum.Font.Code
 Lines.Text = "1\n"
 Lines.TextColor3 = Color3.new(1, 1, 1)
 Lines.TextSize = 15
-Lines.TextWrapped = true
+Lines.TextWrapped = false
 Lines.TextYAlignment = Enum.TextYAlignment.Top
 
 ColorPicker.Name = "ColorPicker"
