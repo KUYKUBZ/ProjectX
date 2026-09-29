@@ -1856,7 +1856,12 @@ function library:AddWindow(title, options)
 										Lines.Text = Lines.Text .. i .. "\n"
 									end
 
-									sf.CanvasSize = UDim2.new(0, 10000, 0, lin * 20)
+									sf.CanvasSize = UDim2.new(
+									  0,
+									    math.max(Source.AbsoluteSize.X + 40, Source.TextBounds.X + 60),
+   									  0,
+  									math.max(Source.AbsoluteSize.Y, lin * 20)
+									)
 								end
 
 							local highlight_logs = function(type)
@@ -1873,7 +1878,12 @@ function library:AddWindow(title, options)
 										lin = lin + 1
 									end)
 
-									sf.CanvasSize = UDim2.new(0, 0, lin * 0.153846154, 0)
+									sf.CanvasSize = UDim2.new(
+    								  0,
+   									 math.max(Source.AbsoluteSize.X + 40, Source.TextBounds.X + 60),
+  									  0,
+  									 math.max(Source.AbsoluteSize.Y, lin * 20)
+									)
 								end
 							end
 
