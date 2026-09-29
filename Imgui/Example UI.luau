@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/Imgui/src.luau"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/ProjectX/refs/heads/main/Imgui/src.luau"))()
 do -- Example UI
 	local Window = library:AddWindow("Preview", {
 		main_color = Color3.fromRGB(41, 74, 122),
