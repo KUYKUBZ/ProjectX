@@ -1764,7 +1764,7 @@ function library:AddWindow(title, options)
 							        end
 							    end)
 
-							    return highlight
+							    return --highlight
 							end
 
 							local info = function(string)
