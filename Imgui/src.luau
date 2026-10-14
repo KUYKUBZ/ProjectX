@@ -2033,7 +2033,6 @@ default_tab.Visible = true
 -- ⭐ เพิ่ม 2 บรรทัดนี้ — ดัน Tabs ขึ้นไปชิดแถบเลย ⭐
 tabs.Position = UDim2.new(0, 15, 0, 30)
 tabs.Size = UDim2.new(1, -30, 1, -30)
-print("✅ Tabs ถูกย้ายแล้ว!")   -- ⬅️ เพิ่มบรรทัดนี้
 -- ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
 for name, fn in next, default_tab_data do
