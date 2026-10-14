@@ -2029,13 +2029,28 @@ for _, v in next, tab_buttons:GetChildren() do
 end
 tab_selection.Visible = false
 default_tab.Visible = true
+
+-- ⭐ เพิ่ม 2 บรรทัดนี้ — ดัน Tabs ขึ้นไปชิดแถบเลย ⭐
+tabs.Position = UDim2.new(0, 15, 0, 30)
+tabs.Size = UDim2.new(1, -30, 1, -30)
+-- ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
 for name, fn in next, default_tab_data do
 	if name ~= "Show" and window_data[name] == nil then
 		window_data[name] = fn
 	end
 end
+
+-- ⭐ เพิ่มท่อนนี้ — คืนค่า Tabs เมื่อผู้ใช้เรียก AddTab จริง ⭐
+local _origAddTab = window_data.AddTab
+window_data.AddTab = function(self, tab_name)
+	tabs.Position = UDim2.new(0, 15, 0, 60)
+	tabs.Size = UDim2.new(1, -30, 1, -60)
+	return _origAddTab(self, tab_name)
+end
+-- ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 -- ======================
-	end
+end
 
 	do
 		for i, v in next, Window:GetDescendants() do
