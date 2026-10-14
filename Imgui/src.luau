@@ -2020,6 +2020,21 @@ function library:AddWindow(title, options)
 				return tab_data, new_tab
 			end
 		end
+-- === default tab ซ่อน ===
+local default_tab_data, default_tab = window_data:AddTab("__default__")
+for _, v in next, tab_buttons:GetChildren() do
+	if v:IsA("TextButton") and v.Text == "__default__" then
+		v.Visible = false
+	end
+end
+tab_selection.Visible = false
+default_tab.Visible = true
+for name, fn in next, default_tab_data do
+	if name ~= "Show" and window_data[name] == nil then
+		window_data[name] = fn
+	end
+end
+-- ======================
 	end
 
 	do
